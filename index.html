@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>KULIAHKU — Your Campus. Your Knowledge.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="logo" href="#" onclick="go('home')">KULIAH<span>KU.</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a onclick="go('home')">Beranda</a>
+      <a onclick="go('courses')">Mata Kuliah</a>
+      <a onclick="go('materials')">Materi</a>
+      <a onclick="go('tasks')">Tugas</a>
+      <a onclick="go('announcements')">Pengumuman</a>
+      <a id="profileNav" onclick="go('profile')">Profil</a>
+    </nav>
+    <div class="nav-actions" id="navActions"></div>
+    <button class="menu-btn"
+      onclick="document.getElementById('navlinks').classList.toggle('open')"
+      aria-label="Buka navigasi">☰</button>
+  </div>
+</header>
+
+<main id="content"></main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="logo">KULIAH<span style="color:black">KU.</span></div>
+        <p>One place for everything academic.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <p><a href="#" onclick="go('materials')">Materi Kuliah</a></p>
+        <p><a href="#" onclick="go('tasks')">Daftar Tugas</a></p>
+      </div>
+      <div>
+        <strong>Academic Workspace</strong>
+        <p>Platform berbagi pengetahuan mahasiswa.</p>
+      </div>
+    </div>
+    <hr style="border:0;border-top:1px solid #333;margin:28px 0">
+    <p>© 2026 KULIAHKU. Built for students, by students.</p>
+  </div>
+</footer>
+
+<div id="modalRoot"></div>
+<div id="toastRoot"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
